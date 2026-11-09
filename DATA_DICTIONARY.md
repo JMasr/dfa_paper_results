@@ -118,14 +118,14 @@ Sensitivity analyses of the closed-form readout run on the processed partitions 
 
 `metadata/*_macros.csv` contains `macro`, `value`, and `provenance`; the value is a released aggregate or model descriptor, not an individual measurement. The three other metadata CSVs contain the displayed cohort, split and demographic fields. `metadata/templates/` contains table structure only. The scientific descriptors are in CSV, not copied from reference TeX at execution.
 
-`paper/figs/fig_blocks_data.csv` holds paired mean differences and minima/maxima across partitions (percentage points). `fig_rank_curve_data.csv` holds medians and `q25`/`q75` across blocks; these are interquartile ranges, not confidence intervals. Both are immutable references; scripts regenerate their counterparts in `outputs/figs/`.
+`paper/figs/fig_blocks_data.csv` holds paired mean differences and minima/maxima across partitions (percentage points). `fig_rank_curve_data.csv` holds medians and `q25`/`q75` across blocks; these are interquartile ranges, not confidence intervals. Both are immutable references; scripts regenerate their counterparts in `outputs/current/figs/`.
 
 The paper bootstrap uses 5,000 resamples and `numpy.random.default_rng(0)`. Regenerating `sensitivity_macros.tex` starts from the published sensitivity aggregate JSON, not from new sensitivity training. Archived engine contrasts and article contrasts can use different rank groupings/test conventions; see `docs/KNOWN_LIMITS.md`.
 
 
 ## Current paper analysis exports
 
-The default `current` profile does not consume historical q values. The historical all-arm tables are commented out in the manuscript. `paper/current_artifacts.json` defines its active artifact snapshot.
+The default `current` profile does not consume historical q values. The historical all-arm tables are inactive in the manuscript. `paper/current_artifacts.json` defines its active artifact snapshot.
 
 - `outputs/current/data/paired_contrasts.csv`: one row per endpoint/contrast/family (58). `delta` and `mde` are in the endpoint's original units, not percentage points; `p` and `q` are unrounded. `family_m` includes both endpoints as in the paper.
 - `block_differences.csv`: the paired mean difference in each corpus/backbone block and number of paired observations.

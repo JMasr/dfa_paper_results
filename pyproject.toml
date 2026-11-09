@@ -7,7 +7,7 @@ requires-python = ">=3.11,<3.12"
 license = { text = "MIT (code in tools/ and paper/figs/source/); CC-BY-4.0 (data)" }
 authors = [
   { name = "José Manuel Ramírez Sánchez", email = "jmramirez@gts.uvigo.es" },
-  { name = "Laura Docío-Fernández" },
+  { name = "Laura Docío-Fernández", email = "ldocio@uvigo.gal" },
   { name = "Alejandro A. García-Caballero" },
   { name = "Carmen García-Mateo" },
 ]

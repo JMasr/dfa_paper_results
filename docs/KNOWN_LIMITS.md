@@ -1,13 +1,13 @@
-# Alcance y límites
+# Scope and limitations
 
-La reproducción empieza en los resultados por ejecución de dos campañas ya realizadas. Los contrastes, bootstrap y costes seleccionados se calculan desde los CSV; no se requiere el código que entrenó los modelos. Los datos originales conservan sus hashes.
+Reconstruction starts from the exported results of two completed training campaigns. Contrasts, bootstrap intervals and selected-run costs are calculated from CSVs; the original model-training code is not required. Original data files retain their hashes.
 
-Los 58 contrastes actuales no utilizan como entradas los resúmenes ni los q históricos: una prueba ejecuta el análisis con esos archivos físicamente ausentes. Existen 85 discrepancias entre q históricos y BH estándar bajo las familias declaradas; sus tablas exhaustivas no están activas y no forman parte de la validación actual. Se mantienen los archivos originales para trazabilidad, sin corregirlos artificialmente.
+The 58 current contrasts do not consume historical summaries or historical q values. A regression test executes the analysis with those files physically absent. There are 85 discrepancies between archived q values and standard BH correction under the declared families. Their exhaustive tables are inactive and outside the current validation scope. Original files are retained for traceability, without modifying them to resolve these discrepancies.
 
-Cinco archivos de descriptores se generan desde metadatos agregados declarados. No se recalculan edades, sexo o características de modelos desde métricas de entrenamiento. Los conteos de partición se contrastan con los logs.
+Five descriptor files are generated from declared aggregate metadata. Participant age, sex and model characteristics are not remeasured from training metrics. Speaker counts by partition are checked against the protocol logs.
 
-La sensibilidad se verifica a precisión publicada desde diferencias por bloque: seis resúmenes y cuatro tests. La correlación padding-rendimiento (rho=-0.429, p=0.3965, n=6) permanece como agregado reportado: no están incluidas sus seis parejas originales. Esto no afecta a las tablas de contrastes ni a las figuras principales.
+Sensitivity results are checked at published precision from block-level differences: six summaries and four tests. The padding-performance correlation (rho=-0.429, p=0.3965, n=6) remains a reported aggregate because its six original x/y pairs are not included. This does not affect the contrast tables or the main figures.
 
-Las figuras cuantitativas siguen la ruta CSV regenerados, HTML, PDF/PNG. Sus valores se comprueban; la identidad de píxeles entre versiones distintas de Chromium o fuentes no se presupone. Las barras de rango son el intervalo intercuartílico; las líneas de diferencias son el rango entre particiones.
+Quantitative figures follow the path regenerated CSVs, HTML, PDF/PNG. Scientific values are checked; pixel identity across different Chromium or font versions is not assumed. Rank-curve error bars show the interquartile range, and paired-difference lines show the range across partitions.
 
-La descripción editorial del protocolo debe alinearse con MedianPruner y dos búsquedas externas por celda, con seis/doce trials por búsqueda en los comparadores entrenados. La reproducción no altera resultados para resolver diferencias de redacción.
+The manuscript's protocol description still needs to be aligned with MedianPruner and two outer searches per cell, with six/twelve trials per search for gradient-trained comparators. Reconstruction does not alter results to resolve wording discrepancies.

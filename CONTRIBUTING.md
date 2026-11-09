@@ -1,13 +1,13 @@
-# Contribuir al paquete de reproducción
+# Contributing to the reproduction package
 
-Este repositorio reconstruye el análisis del artículo desde resultados agregados. Repetir entrenamientos requiere el código experimental y los datos originales autorizados.
+This repository reconstructs the article's analysis from exported results. Repeating model training requires the original experimental code and authorized source data.
 
-- Usar ramas `feature/`, `fix/` o `docs/`; no trabajar directamente en `main`.
-- Usar `uv sync --locked` y versionar `uv.lock`.
-- Conservar entradas científicas y registrar procedencia y versiones; no cambiar datos para ajustar una referencia.
-- Separar entradas, salidas regeneradas y referencias. Nunca copiar referencias como salidas para hacer pasar una comparación.
-- Toda cifra debe vincularse con sus CSV, configuración y código. Registrar diferencias y datos ausentes de forma explícita.
-- No incluir audio, identificadores personales, credenciales ni archivos `.env`.
-- Ejecutar pruebas de integridad, reproducción y comparación antes de proponer una release.
-- Commits y documentos de entrega en español; código, nombres y comentarios técnicos en inglés. Sin atribuciones automáticas en los mensajes de Git.
-- Revisar cambios y metadatos antes de publicar. La reproducción no debe publicar, crear tags/releases ni modificar servicios externos.
+- Work on `feature/`, `fix/` or `docs/` branches, not directly on `main`.
+- Use `uv sync --locked` and keep `uv.lock` under version control.
+- Preserve scientific inputs and record their provenance and versions. Do not modify data to match a reference.
+- Keep inputs, regenerated outputs and comparison references separate. Never copy references into the output directory to make a comparison pass.
+- Link reported values to their CSV inputs, configuration and code. Record discrepancies and missing evidence explicitly.
+- Do not include audio, participant identifiers, credentials or `.env` files.
+- Run integrity, reproduction and comparison checks before proposing a release.
+- Use English for documentation, identifiers and technical comments. Follow the maintainer's commit conventions and do not append automated attribution trailers.
+- Review changes and metadata before publication. Reproduction commands must not publish files, create tags or modify external services.

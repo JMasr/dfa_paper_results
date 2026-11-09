@@ -17,4 +17,4 @@ reproduce: ## Reconstruct everything in fresh staging and compare references
 package: ## Build a local release archive from a passing reconstruction
 	$(RUN) python tools/package_release.py
 verify-package: ## Verify the local release archive
-	$(RUN) python tools/package_release.py --verify dist/phd-paper-method-1.1.0rc2-current.zip
+	$(RUN) python tools/package_release.py --verify dist/dfa-paper-results-1.1.0rc3-current.zip

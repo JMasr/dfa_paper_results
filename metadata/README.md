@@ -1,7 +1,7 @@
-# Descriptores agregados publicados
+# Released aggregate descriptors
 
-Estos CSV convierten en entradas explícitas los descriptores que la entrega anterior conservaba únicamente en tablas y macros LaTeX. Proceden de los agregados medidos y publicados por los autores; su procedencia está en el manifiesto de esta entrega. No contienen registros individuales, audio ni identificadores de participantes.
+These CSVs make cohort and model descriptors explicit inputs rather than retaining them only in LaTeX tables and macros. They originate from aggregates measured and reported by the authors; provenance is recorded in the release manifest. They contain no individual participant records, audio or participant identifiers.
 
-`build_metadata.py` reconstruye las dos colecciones de macros y las tablas de cohortes, particiones y demografía desde estos CSV. Esta transformación reproduce los artefactos de descripción; no vuelve a calcular edades o composición desde datos privados. `check_splits.py` contrasta adicionalmente los conteos de hablantes con los logs de protocolo.
+`build_metadata.py` reconstructs the two macro collections and the cohort, partition and demographic tables from these CSVs. This transformation reproduces the descriptive artifacts; it does not recalculate ages or cohort composition from private records. `check_splits.py` additionally checks speaker counts against protocol logs.
 
-Los campos de texto conservan el formato LaTeX de presentación cuando es necesario (rangos, unidades y notas); las cabeceras identifican su significado. Un dato ausente permanece ausente: no se convierte en cero.
+Text fields retain LaTeX formatting where needed for ranges, units and notes; column headers identify their meaning. Missing information remains missing and is never converted to zero.

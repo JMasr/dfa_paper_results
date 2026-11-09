@@ -64,13 +64,13 @@
     }
   },
   "source_sha256": {
-    "elsarticle_template/main_elsevier.tex": "8845966ed5cd8c241dc8b3e6cdea6d896c9aea5ad96e0f01819917c697b14d31",
+    "elsarticle_template/main_elsevier.tex": "8d6797c1af05eb499bd53df03fc5f7fb2d3fd712440e718d6f43002f825b97d0",
     "frontmatter.tex": "36a9d3f05dca76ebb9c1cc0e71b1c49730493a4c94f4a953f0295efdc873756d",
     "repository.tex": "c7ac6f987a540ebbe57fcf744d7e13cef9a8c6fe5175bb5926043abfc44ebd30",
     "abstract.tex": "be15fc349b1e022e7be193eb3e1e10278ef1749dc2b70cc961e87c4e2d281ea8",
     "body.tex": "b0655db90d369da421f6bd76609eba33f5be9c7bf5d1143bc23bef6d6cea5859",
     "declarations.tex": "3f1f2f30b4e28e27c725ce1e853dd9b2393040a625050772c7d455ac4fdaa8ec",
-    "elsarticle_template/supplement.tex": "429099212615d9693afda430addced186a954e20056da2dbac972867996f060f",
+    "elsarticle_template/supplement.tex": "ef0d10e7ca72d3d8b21a302001dcf8e1e4ff0ada380fa30c380acdabd189c108",
     "supplement_body.tex": "7d4b52db8cb3b79563abdc827b346975905dfc5a288898d2c156618b00333065",
     "appendix_tripod.tex": "dda8fc1b3023c0e7e44ab3b97447d13d23f4bf0115d0e01e739f7d8c49f62612"
   },

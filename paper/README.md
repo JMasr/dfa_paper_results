@@ -1,18 +1,18 @@
-# Referencias de artefactos del artículo
+# Article reference artifacts
 
-`current_artifacts.json` recoge las entradas literales de los wrappers Elsevier del artículo y suplemento con comentarios excluidos: 19 archivos TeX y cuatro figuras. También conserva hashes de las fuentes y las entradas comentadas, sin reproducir el texto del artículo. `used_macros.json` contiene las 188 macros científicas utilizadas.
+`current_artifacts.json` records the literal inputs of the Elsevier article and supplement wrappers, excluding comments: 19 TeX artifacts and four figures. It also records source hashes and commented inputs without distributing the manuscript text. `used_macros.json` lists the 188 scientific macros used by the manuscript.
 
-`generated/` y `layout/` son referencias de comparación. Los scripts escriben salidas nuevas en `outputs/current/`; no copian estos TeX como resultados. El perfil predeterminado excluye `supps_tab_all_one.tex` y `supps_tab_all_two.tex`, que ya no están activas en el manuscrito. El resto de artefactos inactivos que se recalculan desde ejecuciones se conserva como detalle adicional, identificado por el mapa de cobertura.
+`generated/` and `layout/` contain comparison references. Scripts write fresh outputs to `outputs/current/`; they do not copy these reference TeX files into the results. The default profile excludes `supps_tab_all_one.tex` and `supps_tab_all_two.tex`, which are inactive in the manuscript. Other inactive artifacts that can be recalculated from runs are retained as additional detail, distinguished by the coverage map.
 
-| Grupo activo | Generación |
+| Active artifact group | Generation |
 |---|---|
-| Tablas de rendimiento, contrastes, controles, corpus y costes | `build_paper_sota.py --from-runs`, con resultados por ejecución y bundle de costes |
-| Estadísticas completas, brazos adicionales y relanzamiento entre etapas | Mismo generador; nuevas familias de p/q desde las filas originales |
-| Tres vistas editoriales | `build_editorial_views.py`, desde tablas recién calculadas |
-| Macros del protocolo | `build_protocol_macros.py`, desde configuración/logs exportados |
-| Sensibilidad | `build_sensitivity_macros.py`, JSON con diferencias por bloque y agregados; precisión verificada |
-| Cinco archivos de descriptores | `build_metadata.py`, desde CSV de metadatos agregados; conteos de partición comprobados con logs |
-| Figuras de diferencias y rangos | CSV regenerados → `build_readable_figures.py` → HTML → PDF/PNG |
-| Esquema de métodos | HTML editable → mismo renderizador |
+| Performance, contrasts, controls, corpus and cost tables | `build_paper_sota.py --from-runs`, using run-level results and the cost bundle |
+| Complete statistics, additional arms and cross-stage relaunch comparisons | The same generator; new p/q families calculated from the original rows |
+| Three presentation views | `build_editorial_views.py`, using newly calculated tables |
+| Protocol macros | `build_protocol_macros.py`, using exported configuration and logs |
+| Sensitivity results | `build_sensitivity_macros.py`, using block differences and reported aggregates in JSON; checked at published precision |
+| Five descriptor files | `build_metadata.py`, using aggregate metadata CSVs; partition counts checked against logs |
+| Paired-difference and rank figures | Regenerated CSVs, `build_readable_figures.py`, HTML, PDF/PNG |
+| Method schematic | Editable HTML, rendered by the same pipeline |
 
-Las antiguas tablas exhaustivas y cuatro matrices por bloque permanecen en las referencias históricas. Sus nombres/números de tabla antiguos no deben interpretarse como la numeración del suplemento actual. Véase `docs/ANNEX_DECISION.md`.
+The old exhaustive tables and four block matrices remain as historical references. Their old table names and numbers are not the numbering of the current supplement. See [scope and limitations](../docs/KNOWN_LIMITS.md).
