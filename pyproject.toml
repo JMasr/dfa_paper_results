@@ -1,0 +1,29 @@
+[project]
+name = "dfa-paper-results"
+version = "1.1.0rc3"
+description = "Data release and reproduction scripts for 'Closed-form depth-fusion readout versus parameter-efficient adaptation of speech foundation models for low-resource clinical screening from voice'"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "MIT (code in tools/ and paper/figs/source/); CC-BY-4.0 (data)" }
+authors = [
+  { name = "José Manuel Ramírez Sánchez", email = "jmramirez@gts.uvigo.es" },
+  { name = "Laura Docío-Fernández" },
+  { name = "Alejandro A. García-Caballero" },
+  { name = "Carmen García-Mateo" },
+]
+dependencies = [
+  "numpy>=1.19",
+  "scipy>=1.5",
+  "matplotlib>=3.3",
+  "pillow>=8",
+  "playwright==1.56.0",
+  "pypdf==6.1.1",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.2",
+]

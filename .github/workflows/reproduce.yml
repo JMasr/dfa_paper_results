@@ -1,0 +1,31 @@
+name: Reproduce article analysis
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.7.4'
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run --locked python tools/audit_text.py . --git
+      - run: uv run --locked playwright install --with-deps chromium
+      - run: uv run --locked pytest -q
+      - run: uv run --locked python tools/reproduce.py
+      - run: uv run --locked python tools/package_release.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduction-evidence
+          path: |
+            outputs/**/reproduction-report.json
+            dist/
+          if-no-files-found: error

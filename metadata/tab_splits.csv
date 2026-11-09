@@ -1,0 +1,8 @@
+corpus,train_speakers,validation_speakers,test_speakers,test_recordings,ssl_windows,whisper_windows
+ADReSS,105,19,32,32,3.6,1.5
+VISIA,124,22,37,37,12.9,4.7
+NeuroVoz,72,13,22,207,1.0,1.0
+PARCZ,104,19,31,597,1.0,1.0
+COPERIA cough,104,19,31,31,1.0,1.0
+COPERIA /a/,104,19,31,31,1.8,1.0
+Coswara,1412,250,416,416,1.4,1.0

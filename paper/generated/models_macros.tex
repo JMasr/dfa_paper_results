@@ -1,0 +1,49 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\newcommand{\mdTargetSampleRateKhz}{16}
+\newcommand{\mdSslWindowS}{10}
+\newcommand{\mdWavTwoVecCheckpoint}{\texttt{facebook/wav2vec2-base}}
+\newcommand{\mdWavTwoVecName}{wav2vec~2.0 base}
+\newcommand{\mdWavTwoVecLayers}{12}
+\newcommand{\mdWavTwoVecWidth}{768}
+\newcommand{\mdWavTwoVecHeads}{12}
+\newcommand{\mdWavTwoVecFfn}{3{,}072}
+\newcommand{\mdWavTwoVecReadLayers}{13}
+\newcommand{\mdWavTwoVecParamsM}{94.4}
+\newcommand{\mdWavTwoVecParams}{94{,}371{,}712}
+\newcommand{\mdWavTwoVecWindowS}{10}
+\newcommand{\mdWavTwoVecObjective}{contrastive prediction of quantized latents}
+\newcommand{\mdWavTwoVecPretraining}{LibriSpeech, 960~h, English}
+\newcommand{\mdWavTwoVecInput}{16~kHz waveform / 10~s}
+\newcommand{\mdWavTwoVecHeadProj}{256}
+\newcommand{\mdHubertCheckpoint}{\texttt{facebook/hubert-base-ls960}}
+\newcommand{\mdHubertName}{HuBERT base}
+\newcommand{\mdHubertLayers}{12}
+\newcommand{\mdHubertWidth}{768}
+\newcommand{\mdHubertHeads}{12}
+\newcommand{\mdHubertFfn}{3{,}072}
+\newcommand{\mdHubertReadLayers}{13}
+\newcommand{\mdHubertParamsM}{94.4}
+\newcommand{\mdHubertParams}{94{,}371{,}712}
+\newcommand{\mdHubertWindowS}{10}
+\newcommand{\mdHubertObjective}{masked prediction of clustered units}
+\newcommand{\mdHubertPretraining}{LibriSpeech, 960~h, English}
+\newcommand{\mdHubertInput}{16~kHz waveform / 10~s}
+\newcommand{\mdHubertHeadProj}{256}
+\newcommand{\mdWhisperCheckpoint}{\texttt{openai/whisper-base}}
+\newcommand{\mdWhisperName}{Whisper base (encoder)}
+\newcommand{\mdWhisperLayers}{6}
+\newcommand{\mdWhisperWidth}{512}
+\newcommand{\mdWhisperHeads}{8}
+\newcommand{\mdWhisperFfn}{2{,}048}
+\newcommand{\mdWhisperReadLayers}{7}
+\newcommand{\mdWhisperParamsM}{20.6}
+\newcommand{\mdWhisperParams}{20{,}590{,}592}
+\newcommand{\mdWhisperParamsFullM}{72.6}
+\newcommand{\mdWhisperMelBins}{80}
+\newcommand{\mdWhisperWindowS}{30}
+\newcommand{\mdWhisperObjective}{weakly supervised multilingual ASR}
+\newcommand{\mdWhisperPretraining}{680{,}000~h, multilingual}
+\newcommand{\mdWhisperInput}{80-bin log-Mel / 30~s}
+\newcommand{\mdWhisperHeadProj}{256}

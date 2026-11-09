@@ -1,0 +1,10 @@
+/* Shared palette + idiom for the paper_q1 figures.
+   Inlined into each figure (chromium prints most reliably with inline CSS);
+   this copy is the single source the figures are kept in sync with. */
+:root{
+  --ink:#172033; --muted:#5b6577; --paper:#ffffff; --panel:#ffffff;
+  --line:#cbd2df; --frozen:#dfe5ef; --frozen-stroke:#667085;
+  --train:#d9f2e6; --train-stroke:#19704c; --data:#e6efff; --data-stroke:#315f9e;
+  --closed:#ede7fa; --closed-stroke:#5135a4; --warn:#fff1cf; --warn-stroke:#9a6500;
+  --q:#fce4ec; --q-stroke:#b0326a;
+}

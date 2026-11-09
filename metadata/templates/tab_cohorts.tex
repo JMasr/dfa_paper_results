@@ -1,0 +1,17 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\begin{table}[!t]
+\centering
+\caption{Cohort construction: what each release carries, the rule the manifest builder applies, and the speakers the framework uses. Every count is measured from the release files and the manifests; the published descriptions of the corpora are cited in the text for their populations, not for these counts.}
+\label{tab:cohorts}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{l>{\raggedright\arraybackslash}p{0.34\linewidth}>{\raggedright\arraybackslash}p{0.34\linewidth}r}
+\toprule
+Corpus & In the release & Rule applied & Speakers used \\
+\midrule
+@@ROWS@@
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,5 @@
+brazo,metrica,delta,p,n_bloques,n_pares,testable,significativo,certifica,nota
+lora,speaker_auroc,0.006444336604478906,0.6807392418850213,36,36,True,False,True,DEBE salir no significativo
+lora,speaker_macro_f1,-0.007590469833537172,0.39637474933988415,36,36,True,False,True,DEBE salir no significativo
+dora,speaker_auroc,0.01967510214841181,0.12364826622844463,36,36,True,False,True,DEBE salir no significativo
+dora,speaker_macro_f1,0.004439205023900494,0.4413570295437239,36,36,True,False,True,DEBE salir no significativo

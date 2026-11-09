@@ -1,0 +1,23 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\begin{table}[!t]
+\centering
+\caption{Age and sex of the speakers actually used, measured by joining each corpus's metadata on the speaker identifier. \emph{Matched} is how many of the speakers used were found in that metadata; a matched speaker can still have no age or no sex recorded, and a field that covers fewer than the matched speakers carries its own $n$. Age: median [Q1--Q3] (min--max). Where no metadata was available the cell says so.}
+\label{tab:demographics}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{lrll}
+\toprule
+Corpus & Matched & Age (years) & Sex \\
+\midrule
+ADReSS & 156/156 & 67 [62--72] (50--79) & female 86, male 70 \\
+VISIA & 183/183 & 15 [14--16] (11--18) & female 108, male 75 \\
+NeuroVoz & 107/107 & 68 [59--74] (31--88), $n$=\,105 & male 60, female 46 ($n$=\,106) \\
+PARCZ & -- & not available & not available \\
+COPERIA cough & 154/154 & 47 [41--55] (24--67) & female 103, male 51 \\
+COPERIA /a/ & 154/154 & 47 [41--55] (24--67) & female 103, male 51 \\
+Coswara & 2078/2078 & 31 [25--43] (1--99) & male 1455, female 621, other 2 \\
+\bottomrule
+\end{tabular}}
+\end{table}

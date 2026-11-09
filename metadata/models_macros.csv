@@ -1,0 +1,47 @@
+macro,value,provenance
+mdTargetSampleRateKhz,16,released_aggregate_metadata
+mdSslWindowS,10,released_aggregate_metadata
+mdWavTwoVecCheckpoint,\texttt{facebook/wav2vec2-base},released_aggregate_metadata
+mdWavTwoVecName,wav2vec~2.0 base,released_aggregate_metadata
+mdWavTwoVecLayers,12,released_aggregate_metadata
+mdWavTwoVecWidth,768,released_aggregate_metadata
+mdWavTwoVecHeads,12,released_aggregate_metadata
+mdWavTwoVecFfn,"3{,}072",released_aggregate_metadata
+mdWavTwoVecReadLayers,13,released_aggregate_metadata
+mdWavTwoVecParamsM,94.4,released_aggregate_metadata
+mdWavTwoVecParams,"94{,}371{,}712",released_aggregate_metadata
+mdWavTwoVecWindowS,10,released_aggregate_metadata
+mdWavTwoVecObjective,contrastive prediction of quantized latents,released_aggregate_metadata
+mdWavTwoVecPretraining,"LibriSpeech, 960~h, English",released_aggregate_metadata
+mdWavTwoVecInput,16~kHz waveform / 10~s,released_aggregate_metadata
+mdWavTwoVecHeadProj,256,released_aggregate_metadata
+mdHubertCheckpoint,\texttt{facebook/hubert-base-ls960},released_aggregate_metadata
+mdHubertName,HuBERT base,released_aggregate_metadata
+mdHubertLayers,12,released_aggregate_metadata
+mdHubertWidth,768,released_aggregate_metadata
+mdHubertHeads,12,released_aggregate_metadata
+mdHubertFfn,"3{,}072",released_aggregate_metadata
+mdHubertReadLayers,13,released_aggregate_metadata
+mdHubertParamsM,94.4,released_aggregate_metadata
+mdHubertParams,"94{,}371{,}712",released_aggregate_metadata
+mdHubertWindowS,10,released_aggregate_metadata
+mdHubertObjective,masked prediction of clustered units,released_aggregate_metadata
+mdHubertPretraining,"LibriSpeech, 960~h, English",released_aggregate_metadata
+mdHubertInput,16~kHz waveform / 10~s,released_aggregate_metadata
+mdHubertHeadProj,256,released_aggregate_metadata
+mdWhisperCheckpoint,\texttt{openai/whisper-base},released_aggregate_metadata
+mdWhisperName,Whisper base (encoder),released_aggregate_metadata
+mdWhisperLayers,6,released_aggregate_metadata
+mdWhisperWidth,512,released_aggregate_metadata
+mdWhisperHeads,8,released_aggregate_metadata
+mdWhisperFfn,"2{,}048",released_aggregate_metadata
+mdWhisperReadLayers,7,released_aggregate_metadata
+mdWhisperParamsM,20.6,released_aggregate_metadata
+mdWhisperParams,"20{,}590{,}592",released_aggregate_metadata
+mdWhisperParamsFullM,72.6,released_aggregate_metadata
+mdWhisperMelBins,80,released_aggregate_metadata
+mdWhisperWindowS,30,released_aggregate_metadata
+mdWhisperObjective,weakly supervised multilingual ASR,released_aggregate_metadata
+mdWhisperPretraining,"680{,}000~h, multilingual",released_aggregate_metadata
+mdWhisperInput,80-bin log-Mel / 30~s,released_aggregate_metadata
+mdWhisperHeadProj,256,released_aggregate_metadata

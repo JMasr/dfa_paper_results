@@ -1,0 +1,17 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\begin{table}[!t]
+\centering
+\caption{Speaker-disjoint partition of each corpus as executed (speakers in the training and validation sets of the selected model and in the test set; identical counts in the three partitions), the test recordings, and the number of encoder windows per test recording (10~s for the self-supervised encoders, the native 30~s window for Whisper).}
+\label{tab:splits}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{lrrrrrr}
+\toprule
+Corpus & Train spk. & Val.\ spk. & Test spk. & Test rec. & Windows/rec.\ (10~s) & Windows/rec.\ (30~s) \\
+\midrule
+@@ROWS@@
+\bottomrule
+\end{tabular}}
+\end{table}

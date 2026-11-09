@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { 
+    --ink: #172033; --muted: #5b6577; --line: #cbd2df; --panel: #fff;
+    --frozen: #dfe5ef; --frozen-stroke: #667085; --train: #d9f2e6; --train-stroke: #19704c;
+    --data: #e6efff; --data-stroke: #315f9e; --closed: #ede7fa; --closed-stroke: #5135a4;
+    --warn: #fff1cf; --warn-stroke: #9a6500; 
+  }
+  @page { size: 1120px 860px; margin: 0; }
+  * { box-sizing: border-box; } 
+  html, body { margin: 0; }
+  body { 
+    width: 1120px; height: 860px; overflow: hidden; background: #fff; color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; 
+  }
+  .wrap { padding: 14px 18px; }
+  .legend { display: flex; gap: 18px; align-items: center; margin: 0 0 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 12.5px; }
+  .sw { width: 15px; height: 15px; border: 2px solid; border-radius: 4px; }
+  .knob-pill { display: inline-flex; align-items: center; background: var(--warn); border: 1.6px solid var(--warn-stroke);
+    border-radius: 99px; padding: 3px 10px; color: var(--warn-stroke); font-size: 11px; font-weight: 700; white-space: nowrap; line-height: 1.2; }
+  .f { background: var(--frozen); border-color: var(--frozen-stroke); }
+  .t { background: var(--train); border-color: var(--train-stroke); }
+  .c { background: var(--closed); border-color: var(--closed-stroke); }
+  .fam { display: grid; grid-template-columns: 178px 1fr; gap: 12px; align-items: stretch; border-top: 1px solid var(--line); padding: 8px 0; }
+  .famh { display: flex; flex-direction: column; justify-content: center; }
+  .famt { font-size: 14px; font-weight: 800; }
+  .famd { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .cards { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+  .card { flex: 0 0 286px; border: 1px solid var(--line); border-radius: 11px; padding: 7px 10px 6px; background: var(--panel); }
+  .cn { font-size: 13px; font-weight: 700; }
+  .cn small { font-weight: 500; color: var(--muted); font-size: 10.5px; }
+  code { font-family: "DejaVu Sans Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 0.95em; }
+  .cl { font-size: 10.5px; color: var(--muted); margin-top: 3px; }
+  .cl b { color: var(--ink); font-weight: 650; }
+  svg { display: block; width: 100%; height: auto; margin-top: 3px; }
+  .lbl { fill: var(--ink); font-size: 11px; font-weight: 650; text-anchor: middle; }
+  .sm { fill: var(--muted); font-size: 9px; text-anchor: middle; }
+  .box { stroke-width: 1.6; }
+  .b-f { fill: var(--frozen); stroke: var(--frozen-stroke); }
+  .b-t { fill: var(--train); stroke: var(--train-stroke); }
+  .b-c { fill: var(--closed); stroke: var(--closed-stroke); }
+  .arr { stroke: #475467; stroke-width: 1.5; fill: none; marker-end: url(#a); }
+  .conn { stroke: var(--warn-stroke); stroke-width: 1.4; }
+  .knob { fill: var(--warn); stroke: var(--warn-stroke); stroke-width: 1.6; }
+  .knobt { fill: var(--warn-stroke); font-size: 9.5px; font-weight: 700; text-anchor: middle; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="legend">
+    <span><i class="sw f"></i>frozen</span>
+    <span><i class="sw t"></i>gradient-trained</span>
+    <span><i class="sw c"></i>closed form or fixed (no gradient step)</span>
+    <span><i class="knob-pill">lever</i>what the method trains</span>
+  </div>
+  <svg width="0" height="0"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto"><path d="M0,0 L0,5 L7,2.5 z" fill="#475467"/></marker></defs></svg>
+
+  <!-- ===== H1. Published PEFT: inside the encoder ===== -->
+  <div class="fam">
+    <div class="famh"><div class="famt">H1&nbsp;&nbsp;Encoder adaptation</div><div class="famd">five established methods and one input-side variant; all read the last layer with a gradient-trained head</div></div>
+    <div class="cards">
+      <div class="card">
+        <div class="cn">LoRA</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="108" height="34" rx="7"/><text class="lbl" x="60" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="24" y="42" width="72" height="13" rx="4"/><text class="lbl" x="60" y="52" style="font-size:9px">+ B&#183;A</text>
+          <path class="arr" d="M114 41 H136"/>
+          <rect class="box b-f" x="136" y="27" width="54" height="28" rx="7"/><text class="lbl" x="163" y="41">last</text><text class="sm" x="163" y="52">layer, pool</text>
+          <path class="arr" d="M190 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="60" y1="20" x2="60" y2="24"/><rect class="knob" x="46" y="6" width="28" height="14" rx="7"/><text class="knobt" x="60" y="16">A,B</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> low-rank branch B&#183;A in parallel to W&#8320; (q, v projections), plus the head.</div>
+      </div>
+      <div class="card">
+        <div class="cn">DoRA</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="108" height="34" rx="7"/><text class="lbl" x="60" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="18" y="42" width="84" height="13" rx="4"/><text class="lbl" x="60" y="52" style="font-size:9px">+ B&#183;A, magnitude m</text>
+          <path class="arr" d="M114 41 H136"/>
+          <rect class="box b-f" x="136" y="27" width="54" height="28" rx="7"/><text class="lbl" x="163" y="41">last</text><text class="sm" x="163" y="52">layer, pool</text>
+          <path class="arr" d="M190 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="60" y1="20" x2="60" y2="24"/><rect class="knob" x="38" y="6" width="44" height="14" rx="7"/><text class="knobt" x="60" y="16">A,B,&#8201;m</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> the same branch on the direction of W&#8320;, plus a per-channel magnitude m, plus the head.</div>
+      </div>
+      <div class="card">
+        <div class="cn">AdaLoRA</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="108" height="34" rx="7"/><text class="lbl" x="60" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="18" y="42" width="84" height="13" rx="4"/><text class="lbl" x="60" y="52" style="font-size:9px">+ P&#183;&#923;&#183;Q</text>
+          <path class="arr" d="M114 41 H136"/>
+          <rect class="box b-f" x="136" y="27" width="54" height="28" rx="7"/><text class="lbl" x="163" y="41">last</text><text class="sm" x="163" y="52">layer, pool</text>
+          <path class="arr" d="M190 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="60" y1="20" x2="60" y2="24"/><rect class="knob" x="40" y="6" width="40" height="14" rx="7"/><text class="knobt" x="60" y="16">P,&#923;,Q</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> a low-rank branch in singular-value form whose rank budget moves across sites during training, plus the head.</div>
+      </div>
+      <div class="card">
+        <div class="cn">IA&#179;</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="82" height="34" rx="7"/><text class="lbl" x="47" y="45">frozen W&#8320;</text>
+          <path class="arr" d="M88 41 H100"/>
+          <rect class="box b-t" x="100" y="27" width="34" height="28" rx="7"/><text class="lbl" x="117" y="45">&#8857; &#8467;</text>
+          <path class="arr" d="M134 41 H150"/>
+          <rect class="box b-f" x="150" y="27" width="50" height="28" rx="7"/><text class="lbl" x="175" y="41">last</text><text class="sm" x="175" y="52">layer, pool</text>
+          <path class="arr" d="M200 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="117" y1="20" x2="117" y2="27"/><rect class="knob" x="103" y="6" width="28" height="14" rx="7"/><text class="knobt" x="117" y="16">&#8467;</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> a per-channel gate &#8467; on the output of each projection (no rank), plus the head.</div>
+      </div>
+      <div class="card">
+        <div class="cn">HiRA</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="108" height="34" rx="7"/><text class="lbl" x="60" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="18" y="42" width="84" height="13" rx="4"/><text class="lbl" x="60" y="52" style="font-size:9px">+ W&#8320; &#8857; (B&#183;A)</text>
+          <path class="arr" d="M114 41 H136"/>
+          <rect class="box b-f" x="136" y="27" width="54" height="28" rx="7"/><text class="lbl" x="163" y="41">last</text><text class="sm" x="163" y="52">layer, pool</text>
+          <path class="arr" d="M190 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="60" y1="20" x2="60" y2="24"/><rect class="knob" x="46" y="6" width="28" height="14" rx="7"/><text class="knobt" x="60" y="16">A,B</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> a low-rank product multiplied element-wise by W&#8320;, giving a high-rank update at LoRA's budget, plus the head.</div>
+      </div>
+      <div class="card">
+        <div class="cn">Radial-LoRA <small>&mdash; input-side variant</small></div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-c" x="6" y="30" width="44" height="26" rx="6"/><text class="lbl" x="28" y="47" style="font-size:9.5px">g&#955;(u)&#183;u</text>
+          <path class="arr" d="M50 43 H68"/>
+          <rect class="box b-f" x="68" y="24" width="104" height="34" rx="7"/><text class="lbl" x="120" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="84" y="42" width="72" height="13" rx="4"/><text class="lbl" x="120" y="52" style="font-size:9px">+ B&#183;A</text>
+          <path class="arr" d="M172 43 H192"/>
+          <rect class="box b-f" x="192" y="29" width="44" height="28" rx="7"/><text class="lbl" x="214" y="43">last</text><text class="sm" x="214" y="53">pool</text>
+          <path class="arr" d="M236 43 H254"/>
+          <rect class="box b-t" x="254" y="29" width="42" height="28" rx="7"/><text class="lbl" x="275" y="47">head</text>
+          <line class="conn" x1="28" y1="20" x2="28" y2="30" style="stroke:var(--closed-stroke)"/><rect class="knob" x="6" y="6" width="44" height="14" rx="7" style="fill:var(--closed);stroke:var(--closed-stroke)"/><text class="knobt" x="28" y="16" style="fill:var(--closed-stroke)">&#955; fixed</text>
+          <line class="conn" x1="120" y1="20" x2="120" y2="24"/><rect class="knob" x="106" y="6" width="28" height="14" rx="7"/><text class="knobt" x="120" y="16">A,B</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> LoRA's branch on a norm-tempered input g&#955;(u)&#183;u; &#955; is fixed by rank (0.35 at r=8), not trained. Same budget as LoRA.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== H3. Readout ===== -->
+  <div class="fam">
+    <div class="famh"><div class="famt">H2&nbsp;&nbsp;The readout</div><div class="famd">do not adapt; read the frozen encoder in closed form (proposed)</div></div>
+    <div class="cards">
+      <div class="card">
+        <div class="cn">DFA</div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="27" width="92" height="28" rx="7"/><text class="lbl" x="52" y="45">frozen encoder</text>
+          <path class="arr" d="M98 41 H120"/>
+          <rect class="box b-c" x="120" y="27" width="74" height="28" rx="7"/><text class="lbl" x="157" y="41">all layers</text><text class="sm" x="157" y="52">mean, 1/K each</text>
+          <path class="arr" d="M194 41 H214"/>
+          <rect class="box b-c" x="214" y="27" width="82" height="28" rx="7"/><text class="lbl" x="255" y="41">LDA</text><text class="sm" x="255" y="52">shrinkage, closed form</text>
+          <line class="conn" x1="255" y1="20" x2="255" y2="27"/><rect class="knob" x="239" y="6" width="32" height="14" rx="7"/><text class="knobt" x="255" y="16">none</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> nothing. Equal-weight (1/K) fusion of all K&nbsp;=&nbsp;L+1 depths, standardisation, Ledoit&#8211;Wolf LDA fitted once.</div>
+      </div>
+      <div class="card">
+        <div class="cn">DFA-last <small>&mdash; depth control</small></div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="27" width="92" height="28" rx="7"/><text class="lbl" x="52" y="45">frozen encoder</text>
+          <path class="arr" d="M98 41 H120"/>
+          <rect class="box b-f" x="120" y="27" width="74" height="28" rx="7"/><text class="lbl" x="157" y="41">last layer</text><text class="sm" x="157" y="52">mean</text>
+          <path class="arr" d="M194 41 H214"/>
+          <rect class="box b-c" x="214" y="27" width="82" height="28" rx="7"/><text class="lbl" x="255" y="41">LDA</text><text class="sm" x="255" y="52">shrinkage, closed form</text>
+          <line class="conn" x1="255" y1="20" x2="255" y2="27"/><rect class="knob" x="239" y="6" width="32" height="14" rx="7"/><text class="knobt" x="255" y="16">none</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> nothing. Same head on the last layer only; isolates what depth fusion adds.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Controls for the readout factor ===== -->
+  <div class="fam">
+    <div class="famh"><div class="famt">Controls</div><div class="famd">probe depth of the read, estimator and encoder adaptation</div></div>
+    <div class="cards">
+      <div class="card">
+        <div class="cn">LoRA, all-layer read <small>&mdash; <code>lora-ln-dw</code></small></div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="24" width="108" height="34" rx="7"/><text class="lbl" x="60" y="38">frozen W&#8320;</text>
+          <rect class="box b-t" x="24" y="42" width="72" height="13" rx="4"/><text class="lbl" x="60" y="52" style="font-size:9px">+ B&#183;A</text>
+          <path class="arr" d="M114 41 H136"/>
+          <rect class="box b-c" x="136" y="27" width="54" height="28" rx="7"/><text class="lbl" x="163" y="41">all layers</text><text class="sm" x="163" y="52">mean</text>
+          <path class="arr" d="M190 41 H212"/>
+          <rect class="box b-t" x="212" y="27" width="84" height="28" rx="7"/><text class="lbl" x="254" y="45">head</text>
+          <line class="conn" x1="60" y1="20" x2="60" y2="24"/><rect class="knob" x="46" y="6" width="28" height="14" rx="7"/><text class="knobt" x="60" y="16">A,B</text>
+          <line class="conn" x1="254" y1="20" x2="254" y2="27"/><rect class="knob" x="238" y="6" width="32" height="14" rx="7"/><text class="knobt" x="254" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> as LoRA, but the head reads the fixed uniform average of all layers. <code>lora-recipe</code> adds test-time checkpoint averaging.</div>
+      </div>
+      <div class="card">
+        <div class="cn">Learned layer weights <small>&mdash; <code>wls-readout</code></small></div>
+        <svg viewBox="0 0 300 62">
+          <rect class="box b-f" x="6" y="27" width="92" height="28" rx="7"/><text class="lbl" x="52" y="45">frozen encoder</text>
+          <path class="arr" d="M98 41 H120"/>
+          <rect class="box b-t" x="120" y="27" width="74" height="28" rx="7"/><text class="lbl" x="157" y="41">all layers</text><text class="sm" x="157" y="52">learned w&#8467;</text>
+          <path class="arr" d="M194 41 H214"/>
+          <rect class="box b-t" x="214" y="27" width="82" height="28" rx="7"/><text class="lbl" x="255" y="45">head</text>
+          <line class="conn" x1="157" y1="20" x2="157" y2="27"/><rect class="knob" x="143" y="6" width="28" height="14" rx="7"/><text class="knobt" x="157" y="16">w&#8467;</text>
+          <line class="conn" x1="255" y1="20" x2="255" y2="27"/><rect class="knob" x="239" y="6" width="32" height="14" rx="7"/><text class="knobt" x="255" y="16">head</text>
+        </svg>
+        <div class="cl"><b>Trains:</b> the layer weights and the head by gradient on the frozen encoder (SUPERB-style); stage 1.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

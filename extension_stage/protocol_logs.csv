@@ -1,0 +1,400 @@
+stage,adapter,model,corpus,sampler_pruner,final_train_val_speakers,test_speakers
+2,dfa,hubert_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa,hubert_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,hubert_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,hubert_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa,hubert_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa,hubert_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,hubert_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa,wav2vec2_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa,wav2vec2_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,wav2vec2_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,wav2vec2_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa,wav2vec2_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa,wav2vec2_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,wav2vec2_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa,whisper_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa,whisper_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,whisper_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,whisper_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa,whisper_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa,whisper_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa,whisper_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_last,hubert_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_last,hubert_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,hubert_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,hubert_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_last,hubert_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_last,hubert_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,hubert_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_last,wav2vec2_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_last,wav2vec2_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,wav2vec2_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,wav2vec2_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_last,wav2vec2_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_last,wav2vec2_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,wav2vec2_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_last,whisper_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_last,whisper_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,whisper_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,whisper_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_last,whisper_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_last,whisper_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_last,whisper_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_anchor,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_anchor,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_anchor,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_anchor,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_anchor,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_anchor,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_anchor,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_anchor,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_anchor,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_anchor,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_anchor,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_anchor,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_anchor,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_ns,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_ns,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_ns,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_ns,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_ns,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_ns,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_ns,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_ns,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_lora_ns,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dfa_lora_ns,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dfa_lora_ns,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dfa_lora_ns,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dfa_lora_ns,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dfa_sph,hubert_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_sph,hubert_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,hubert_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,hubert_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_sph,hubert_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_sph,hubert_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,hubert_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_sph,wav2vec2_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_sph,wav2vec2_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,wav2vec2_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,wav2vec2_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_sph,wav2vec2_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_sph,wav2vec2_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,wav2vec2_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dfa_sph,whisper_base,adress_dementia,TPE(startup=1) + NopPruner,105|19,32
+2,dfa_sph,whisper_base,coperia_a,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,whisper_base,coperia_cough,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,whisper_base,coswara,TPE(startup=1) + NopPruner,1412|250,416
+2,dfa_sph,whisper_base,neurovoz_vowels,TPE(startup=1) + NopPruner,72|13,22
+2,dfa_sph,whisper_base,parcz_vowels,TPE(startup=1) + NopPruner,104|19,31
+2,dfa_sph,whisper_base,visia,TPE(startup=1) + NopPruner,124|22,37
+2,dora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,dora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,dora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,dora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,dora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,dora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,fft,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,fft,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,fft,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,fft,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,fft,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,fft,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,fft,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,fft,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,fft,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,fft,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,fft,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,fft,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,fft,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln_dw,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln_dw,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln_dw,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln_dw,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln_dw,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln_dw,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln_dw,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln_dw,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_ln_dw,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_ln_dw,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_ln_dw,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_ln_dw,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_ln_dw,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_recipe,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_recipe,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_recipe,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_recipe,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_recipe,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_recipe,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_recipe,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_recipe,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,lora_recipe,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,lora_recipe,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,lora_recipe,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,lora_recipe,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,lora_recipe,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,radial_lora_v3,hubert_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,radial_lora_v3,hubert_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,hubert_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,hubert_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,radial_lora_v3,hubert_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,radial_lora_v3,hubert_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,hubert_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,radial_lora_v3,wav2vec2_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,radial_lora_v3,wav2vec2_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,wav2vec2_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,wav2vec2_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,radial_lora_v3,wav2vec2_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,radial_lora_v3,wav2vec2_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,wav2vec2_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37
+2,radial_lora_v3,whisper_base,adress_dementia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",105|19,32
+2,radial_lora_v3,whisper_base,coperia_a,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,whisper_base,coperia_cough,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,whisper_base,coswara,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",1412|250,416
+2,radial_lora_v3,whisper_base,neurovoz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",72|13,22
+2,radial_lora_v3,whisper_base,parcz_vowels,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",104|19,31
+2,radial_lora_v3,whisper_base,visia,"TPE(startup=3) + MedianPruner(startup=4, warmup=5)",124|22,37

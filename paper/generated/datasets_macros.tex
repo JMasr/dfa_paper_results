@@ -1,0 +1,279 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\newcommand{\dsMinTestSpk}{20}
+\newcommand{\dsAdressName}{ADReSS}
+\newcommand{\dsAdressCondition}{Alzheimer's dementia}
+\newcommand{\dsAdressMaterial}{spontaneous speech (picture description)}
+\newcommand{\dsAdressLanguage}{English}
+\newcommand{\dsAdressAccess}{public}
+\newcommand{\dsAdressBlock}{adress\_dementia}
+\newcommand{\dsAdressSpeakers}{156}
+\newcommand{\dsAdressRecordings}{156}
+\newcommand{\dsAdressRecPerSpkMean}{1.0}
+\newcommand{\dsAdressRecPerSpkMin}{1}
+\newcommand{\dsAdressRecPerSpkMax}{1}
+\newcommand{\dsAdressNClasses}{2}
+\newcommand{\dsAdressPosClass}{AD}
+\newcommand{\dsAdressPosSpeakers}{78}
+\newcommand{\dsAdressNegSpeakers}{78}
+\newcommand{\dsAdressClassCounts}{AD 78 / non-AD 78}
+\newcommand{\dsAdressTrainSpk}{105}
+\newcommand{\dsAdressValSpk}{19}
+\newcommand{\dsAdressTestSpk}{32}
+\newcommand{\dsAdressTestRec}{32}
+\newcommand{\dsAdressTestOutSpk}{32}
+\newcommand{\dsAdressWindowsWhisper}{1.5}
+\newcommand{\dsAdressWindowsSsl}{3.6}
+\newcommand{\dsAdressDemoAvailable}{yes}
+\newcommand{\dsAdressDemoMatched}{156/156}
+\newcommand{\dsAdressAgeN}{156}
+\newcommand{\dsAdressAgeMedian}{67}
+\newcommand{\dsAdressAgeQOne}{62}
+\newcommand{\dsAdressAgeQThree}{72}
+\newcommand{\dsAdressAgeMin}{50}
+\newcommand{\dsAdressAgeMax}{79}
+\newcommand{\dsAdressSex}{female 86, male 70}
+\newcommand{\dsAdressFemale}{86}
+\newcommand{\dsAdressMale}{70}
+\newcommand{\dsAdressRefStandardStatus}{documented in the corpus description}
+\newcommand{\dsVisiaName}{VISIA}
+\newcommand{\dsVisiaCondition}{adolescent suicide risk}
+\newcommand{\dsVisiaMaterial}{interview speech}
+\newcommand{\dsVisiaLanguage}{Spanish}
+\newcommand{\dsVisiaAccess}{access-restricted}
+\newcommand{\dsVisiaBlock}{visia}
+\newcommand{\dsVisiaSpeakers}{183}
+\newcommand{\dsVisiaRecordings}{183}
+\newcommand{\dsVisiaRecPerSpkMean}{1.0}
+\newcommand{\dsVisiaRecPerSpkMin}{1}
+\newcommand{\dsVisiaRecPerSpkMax}{1}
+\newcommand{\dsVisiaNClasses}{3}
+\newcommand{\dsVisiaPosClass}{G1}
+\newcommand{\dsVisiaPosSpeakers}{38}
+\newcommand{\dsVisiaNegSpeakers}{145}
+\newcommand{\dsVisiaClassCounts}{G1 38 / G2 48 / G3 97}
+\newcommand{\dsVisiaTrainSpk}{124}
+\newcommand{\dsVisiaValSpk}{22}
+\newcommand{\dsVisiaTestSpk}{37}
+\newcommand{\dsVisiaTestRec}{37}
+\newcommand{\dsVisiaTestOutSpk}{37}
+\newcommand{\dsVisiaWindowsWhisper}{4.7}
+\newcommand{\dsVisiaWindowsSsl}{12.9}
+\newcommand{\dsVisiaDemoAvailable}{yes}
+\newcommand{\dsVisiaDemoMatched}{183/183}
+\newcommand{\dsVisiaAgeN}{183}
+\newcommand{\dsVisiaAgeMedian}{15}
+\newcommand{\dsVisiaAgeQOne}{14}
+\newcommand{\dsVisiaAgeQThree}{16}
+\newcommand{\dsVisiaAgeMin}{11}
+\newcommand{\dsVisiaAgeMax}{18}
+\newcommand{\dsVisiaSex}{female 108, male 75}
+\newcommand{\dsVisiaFemale}{108}
+\newcommand{\dsVisiaMale}{75}
+\newcommand{\dsVisiaRefStandardStatus}{not stated in the manifest}
+\newcommand{\dsNeurovozName}{NeuroVoz}
+\newcommand{\dsNeurovozCondition}{Parkinson's disease}
+\newcommand{\dsNeurovozMaterial}{sustained vowels}
+\newcommand{\dsNeurovozLanguage}{Spanish}
+\newcommand{\dsNeurovozAccess}{on request}
+\newcommand{\dsNeurovozBlock}{neurovoz\_vowels}
+\newcommand{\dsNeurovozSpeakers}{107}
+\newcommand{\dsNeurovozRecordings}{1{,}035}
+\newcommand{\dsNeurovozRecPerSpkMean}{9.7}
+\newcommand{\dsNeurovozRecPerSpkMin}{5}
+\newcommand{\dsNeurovozRecPerSpkMax}{13}
+\newcommand{\dsNeurovozNClasses}{2}
+\newcommand{\dsNeurovozPosClass}{PD}
+\newcommand{\dsNeurovozPosSpeakers}{52}
+\newcommand{\dsNeurovozNegSpeakers}{55}
+\newcommand{\dsNeurovozClassCounts}{HC 55 / PD 52}
+\newcommand{\dsNeurovozTrainSpk}{72}
+\newcommand{\dsNeurovozValSpk}{13}
+\newcommand{\dsNeurovozTestSpk}{22}
+\newcommand{\dsNeurovozTestRec}{207}
+\newcommand{\dsNeurovozTestOutSpk}{22}
+\newcommand{\dsNeurovozWindowsWhisper}{1.0}
+\newcommand{\dsNeurovozWindowsSsl}{1.0}
+\newcommand{\dsNeurovozDemoAvailable}{yes}
+\newcommand{\dsNeurovozDemoMatched}{107/107}
+\newcommand{\dsNeurovozAgeN}{105}
+\newcommand{\dsNeurovozAgeMedian}{68}
+\newcommand{\dsNeurovozAgeQOne}{59}
+\newcommand{\dsNeurovozAgeQThree}{74}
+\newcommand{\dsNeurovozAgeMin}{31}
+\newcommand{\dsNeurovozAgeMax}{88}
+\newcommand{\dsNeurovozSex}{male 60, female 46}
+\newcommand{\dsNeurovozMale}{60}
+\newcommand{\dsNeurovozFemale}{46}
+\newcommand{\dsNeurovozRefStandardStatus}{documented in the corpus description}
+\newcommand{\dsParczName}{PARCZ}
+\newcommand{\dsParczCondition}{Parkinson's disease}
+\newcommand{\dsParczMaterial}{sustained vowels}
+\newcommand{\dsParczLanguage}{Czech}
+\newcommand{\dsParczAccess}{public}
+\newcommand{\dsParczBlock}{parcz\_vowels}
+\newcommand{\dsParczSpeakers}{154}
+\newcommand{\dsParczRecordings}{2{,}971}
+\newcommand{\dsParczRecPerSpkMean}{19.3}
+\newcommand{\dsParczRecPerSpkMin}{9}
+\newcommand{\dsParczRecPerSpkMax}{20}
+\newcommand{\dsParczNClasses}{2}
+\newcommand{\dsParczPosClass}{PD}
+\newcommand{\dsParczPosSpeakers}{101}
+\newcommand{\dsParczNegSpeakers}{53}
+\newcommand{\dsParczClassCounts}{HC 53 / PD 101}
+\newcommand{\dsParczTrainSpk}{104}
+\newcommand{\dsParczValSpk}{19}
+\newcommand{\dsParczTestSpk}{31}
+\newcommand{\dsParczTestRec}{597}
+\newcommand{\dsParczTestOutSpk}{31}
+\newcommand{\dsParczWindowsWhisper}{1.0}
+\newcommand{\dsParczWindowsSsl}{1.0}
+\newcommand{\dsParczDemoAvailable}{no}
+\newcommand{\dsParczDemoMatched}{n/a}
+\newcommand{\dsParczAgeN}{n/a}
+\newcommand{\dsParczAgeMedian}{n/a}
+\newcommand{\dsParczAgeQOne}{n/a}
+\newcommand{\dsParczAgeQThree}{n/a}
+\newcommand{\dsParczAgeMin}{n/a}
+\newcommand{\dsParczAgeMax}{n/a}
+\newcommand{\dsParczSex}{n/a}
+\newcommand{\dsParczRefStandardStatus}{not stated in the manifest}
+\newcommand{\dsCoperiaCoughName}{COPERIA cough}
+\newcommand{\dsCoperiaCoughCondition}{persistent post-COVID-19 symptoms}
+\newcommand{\dsCoperiaCoughMaterial}{voluntary cough}
+\newcommand{\dsCoperiaCoughLanguage}{Spanish}
+\newcommand{\dsCoperiaCoughAccess}{authors' corpus}
+\newcommand{\dsCoperiaCoughBlock}{coperia}
+\newcommand{\dsCoperiaCoughSpeakers}{154}
+\newcommand{\dsCoperiaCoughRecordings}{154}
+\newcommand{\dsCoperiaCoughRecPerSpkMean}{1.0}
+\newcommand{\dsCoperiaCoughRecPerSpkMin}{1}
+\newcommand{\dsCoperiaCoughRecPerSpkMax}{1}
+\newcommand{\dsCoperiaCoughNClasses}{2}
+\newcommand{\dsCoperiaCoughPosClass}{positive}
+\newcommand{\dsCoperiaCoughPosSpeakers}{84}
+\newcommand{\dsCoperiaCoughNegSpeakers}{70}
+\newcommand{\dsCoperiaCoughClassCounts}{negative 70 / positive 84}
+\newcommand{\dsCoperiaCoughTrainSpk}{104}
+\newcommand{\dsCoperiaCoughValSpk}{19}
+\newcommand{\dsCoperiaCoughTestSpk}{31}
+\newcommand{\dsCoperiaCoughTestRec}{31}
+\newcommand{\dsCoperiaCoughTestOutSpk}{31}
+\newcommand{\dsCoperiaCoughWindowsWhisper}{1.0}
+\newcommand{\dsCoperiaCoughWindowsSsl}{1.0}
+\newcommand{\dsCoperiaCoughDemoAvailable}{yes}
+\newcommand{\dsCoperiaCoughDemoMatched}{154/154}
+\newcommand{\dsCoperiaCoughAgeN}{154}
+\newcommand{\dsCoperiaCoughAgeMedian}{47}
+\newcommand{\dsCoperiaCoughAgeQOne}{41}
+\newcommand{\dsCoperiaCoughAgeQThree}{55}
+\newcommand{\dsCoperiaCoughAgeMin}{24}
+\newcommand{\dsCoperiaCoughAgeMax}{67}
+\newcommand{\dsCoperiaCoughSex}{female 103, male 51}
+\newcommand{\dsCoperiaCoughFemale}{103}
+\newcommand{\dsCoperiaCoughMale}{51}
+\newcommand{\dsCoperiaCoughRefStandardStatus}{not stated in the manifest}
+\newcommand{\dsCoperiaAName}{COPERIA /a/}
+\newcommand{\dsCoperiaACondition}{persistent post-COVID-19 symptoms}
+\newcommand{\dsCoperiaAMaterial}{sustained /a/}
+\newcommand{\dsCoperiaALanguage}{Spanish}
+\newcommand{\dsCoperiaAAccess}{authors' corpus}
+\newcommand{\dsCoperiaABlock}{coperia}
+\newcommand{\dsCoperiaASpeakers}{154}
+\newcommand{\dsCoperiaARecordings}{154}
+\newcommand{\dsCoperiaARecPerSpkMean}{1.0}
+\newcommand{\dsCoperiaARecPerSpkMin}{1}
+\newcommand{\dsCoperiaARecPerSpkMax}{1}
+\newcommand{\dsCoperiaANClasses}{2}
+\newcommand{\dsCoperiaAPosClass}{positive}
+\newcommand{\dsCoperiaAPosSpeakers}{84}
+\newcommand{\dsCoperiaANegSpeakers}{70}
+\newcommand{\dsCoperiaAClassCounts}{negative 70 / positive 84}
+\newcommand{\dsCoperiaATrainSpk}{104}
+\newcommand{\dsCoperiaAValSpk}{19}
+\newcommand{\dsCoperiaATestSpk}{31}
+\newcommand{\dsCoperiaATestRec}{31}
+\newcommand{\dsCoperiaATestOutSpk}{31}
+\newcommand{\dsCoperiaAWindowsWhisper}{1.0}
+\newcommand{\dsCoperiaAWindowsSsl}{1.8}
+\newcommand{\dsCoperiaADemoAvailable}{yes}
+\newcommand{\dsCoperiaADemoMatched}{154/154}
+\newcommand{\dsCoperiaAAgeN}{154}
+\newcommand{\dsCoperiaAAgeMedian}{47}
+\newcommand{\dsCoperiaAAgeQOne}{41}
+\newcommand{\dsCoperiaAAgeQThree}{55}
+\newcommand{\dsCoperiaAAgeMin}{24}
+\newcommand{\dsCoperiaAAgeMax}{67}
+\newcommand{\dsCoperiaASex}{female 103, male 51}
+\newcommand{\dsCoperiaAFemale}{103}
+\newcommand{\dsCoperiaAMale}{51}
+\newcommand{\dsCoperiaARefStandardStatus}{not stated in the manifest}
+\newcommand{\dsCoswaraName}{Coswara}
+\newcommand{\dsCoswaraCondition}{COVID-19}
+\newcommand{\dsCoswaraMaterial}{sustained /a/, crowd-sourced}
+\newcommand{\dsCoswaraLanguage}{multiple}
+\newcommand{\dsCoswaraAccess}{public}
+\newcommand{\dsCoswaraBlock}{coswara}
+\newcommand{\dsCoswaraSpeakers}{2{,}078}
+\newcommand{\dsCoswaraRecordings}{2{,}078}
+\newcommand{\dsCoswaraRecPerSpkMean}{1.0}
+\newcommand{\dsCoswaraRecPerSpkMin}{1}
+\newcommand{\dsCoswaraRecPerSpkMax}{1}
+\newcommand{\dsCoswaraNClasses}{2}
+\newcommand{\dsCoswaraPosClass}{positive}
+\newcommand{\dsCoswaraPosSpeakers}{673}
+\newcommand{\dsCoswaraNegSpeakers}{1{,}405}
+\newcommand{\dsCoswaraClassCounts}{negative 1405 / positive 673}
+\newcommand{\dsCoswaraTrainSpk}{1{,}412}
+\newcommand{\dsCoswaraValSpk}{250}
+\newcommand{\dsCoswaraTestSpk}{416}
+\newcommand{\dsCoswaraTestRec}{416}
+\newcommand{\dsCoswaraTestOutSpk}{416}
+\newcommand{\dsCoswaraWindowsWhisper}{1.0}
+\newcommand{\dsCoswaraWindowsSsl}{1.4}
+\newcommand{\dsCoswaraDemoAvailable}{yes}
+\newcommand{\dsCoswaraDemoMatched}{2078/2078}
+\newcommand{\dsCoswaraAgeN}{2{,}078}
+\newcommand{\dsCoswaraAgeMedian}{31}
+\newcommand{\dsCoswaraAgeQOne}{25}
+\newcommand{\dsCoswaraAgeQThree}{43}
+\newcommand{\dsCoswaraAgeMin}{1}
+\newcommand{\dsCoswaraAgeMax}{99}
+\newcommand{\dsCoswaraSex}{male 1455, female 621, other 2}
+\newcommand{\dsCoswaraMale}{1{,}455}
+\newcommand{\dsCoswaraFemale}{621}
+\newcommand{\dsCoswaraRefStandardStatus}{not stated in the manifest}
+\newcommand{\dsItalianpdName}{Italian Parkinson's vowels}
+\newcommand{\dsItalianpdSpeakers}{50}
+\newcommand{\dsItalianpdTestOutSpk}{10}
+\newcommand{\dsNeurovozReleaseSubjects}{112}
+\newcommand{\dsNeurovozVowelSubjects}{111}
+\newcommand{\dsNeurovozVowelFiles}{1{,}066}
+\newcommand{\dsNeurovozMetadataSubjects}{108}
+\newcommand{\dsNeurovozVowelNoMetadata}{4}
+\newcommand{\dsNeurovozMetadataNoVowel}{1}
+\newcommand{\dsCoswaraMetadataIds}{2{,}746}
+\newcommand{\dsCoswaraEligibleByLabel}{2{,}114}
+\newcommand{\dsCoswaraEligiblePos}{681}
+\newcommand{\dsCoswaraEligibleNeg}{1{,}433}
+\newcommand{\dsCoswaraDroppedAmbiguous}{632}
+\newcommand{\dsCoswaraUndecodable}{36}
+\newcommand{\dsCoswaraPosStatuses}{positive mild, positive moderate, positive asymp}
+\newcommand{\dsCoswaraNegStatuses}{healthy}
+\newcommand{\dsVisiaOverSixteen}{26}
+\newcommand{\dsVisiaSeventeen}{24}
+\newcommand{\dsVisiaEighteen}{2}
+\newcommand{\dsAdressOfficialTrain}{108}
+\newcommand{\dsAdressOfficialTest}{48}
+\newcommand{\dsParczVowelsPerSubjectDesign}{20}
+\newcommand{\dsParczCompleteSubjects}{133}
+\newcommand{\dsNCorpora}{7}
+\newcommand{\dsNBlocks}{6}
+\newcommand{\dsNConditions}{4}
+\newcommand{\dsLanguagesNamed}{English, Spanish and Czech}
+\newcommand{\dsNLanguagesNamed}{3}
+\newcommand{\dsTotalSpeakers}{2{,}832}
+\newcommand{\dsManifestCommit}{818661c}
+\newcommand{\dsManifestDate}{2026-09-07 11:17}

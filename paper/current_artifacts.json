@@ -1,0 +1,78 @@
+{
+  "artifact_sha256": {
+    "generated/datasets_macros.tex": "a45fe5e3ea8cba256f2710dad0cb0265bd86375edffd7ec9a9c5c5b47b39611e",
+    "generated/models_macros.tex": "8e21f73379677bbe20929d523b6a77209d62133abe0dbe04603096228e91f65a",
+    "generated/protocol_macros.tex": "6f52bcf51643433eff67ace316295048a532a012f4f81f6314fc0be29b779248",
+    "generated/sensitivity_macros.tex": "7690753fb57774c68a2e50b9eeba4ee5a21bd87e0819596b516f81ca9c43c79c",
+    "generated/sota_macros.tex": "dfc13281d80170aec54712e1c065e3163220bf95b9f609ee66c4726381980ae3",
+    "generated/sota_tab_controls.tex": "e6fe792db646a09920fd50a0e33e72e1a8c432a02011565c5bdde36009722126",
+    "generated/sota_tab_corpus.tex": "335de4a7257a6da111017f3498a360276f8a73f411f563e0644f87e5fd0928c9",
+    "generated/sota_tab_cost.tex": "2fa443bdb66a2e64fdf2121fa0cc7f52b7f2405869f17bc66cd9b6a66f167909",
+    "generated/sota_tab_perarm.tex": "7cab198ba81e85d19908add3b10ce08aad5cd04527744c3802233c8739454d54",
+    "generated/sota_tab_screen.tex": "29760c105ebf2d34f8f2ba2859a59c869e807789b92af8d9852f3041008a09eb",
+    "generated/sota_tab_screen_perf.tex": "d80ae6b9caf74bae10d2b3d57af8dfb07a2b5ce0af912d36c996762e0243ac7d",
+    "generated/supps_tab_extra.tex": "eb97c6ced60cf3d2bfff3a01149a3c93cc23c9252c81e264230b4cc2acc90f8e",
+    "generated/supps_tab_stages.tex": "1e06f5751312b44560e6c4636afd2c26bd2f8b50e5852e1c0891152fe6e7ff51",
+    "generated/tab_cohorts.tex": "c71c901d44d98b2313a7e9f93af915ea09713cde6af3a95cb7e2c3d1fe8ce7be",
+    "generated/tab_demographics.tex": "165d1998bd44f99d5609d04a28fa4fd210f6e3cfa96d60df00250cd3c1ffb7e9",
+    "generated/tab_splits.tex": "e822fceec6056145ed9fee6e10ca7b97c6221e1847fc329e8face157f91d2090",
+    "layout/tab_contrasts.tex": "0e3d0d407b44c38faa9155d0d520e78ab151925c40cb296e81ebcf75bb79d514",
+    "layout/tab_material.tex": "76d9c4e9246fab0c26d9518479152ade4299498efc15a8c49d3611e528fc7aad",
+    "layout/tab_stats.tex": "f5dbf0e63bfa671df8c316ee57608c5622490f3424bcca370bdd6fd7c1e05344"
+  },
+  "scope": "Literal inputs of the two Elsevier wrappers, with TeX comments excluded; not a general TeX interpreter",
+  "documents": {
+    "elsarticle_template/main_elsevier.tex": {
+      "artifacts": [
+        "generated/datasets_macros.tex",
+        "generated/models_macros.tex",
+        "generated/protocol_macros.tex",
+        "generated/sensitivity_macros.tex",
+        "generated/sota_macros.tex",
+        "generated/sota_tab_controls.tex",
+        "generated/sota_tab_corpus.tex",
+        "generated/sota_tab_cost.tex",
+        "generated/sota_tab_perarm.tex",
+        "generated/sota_tab_screen.tex",
+        "generated/sota_tab_screen_perf.tex",
+        "generated/tab_demographics.tex",
+        "layout/tab_contrasts.tex",
+        "layout/tab_material.tex"
+      ],
+      "figures": [
+        "figs/fig_blocks_auroc.pdf",
+        "figs/fig_blocks_macrof.pdf",
+        "figs/fig_families_readable.pdf"
+      ]
+    },
+    "elsarticle_template/supplement.tex": {
+      "artifacts": [
+        "generated/datasets_macros.tex",
+        "generated/models_macros.tex",
+        "generated/protocol_macros.tex",
+        "generated/sensitivity_macros.tex",
+        "generated/sota_macros.tex",
+        "generated/supps_tab_extra.tex",
+        "generated/supps_tab_stages.tex",
+        "generated/tab_cohorts.tex",
+        "generated/tab_splits.tex",
+        "layout/tab_stats.tex"
+      ],
+      "figures": [
+        "figs/fig_rank_readable.pdf"
+      ]
+    }
+  },
+  "source_sha256": {
+    "elsarticle_template/main_elsevier.tex": "ed96b9b00ee280cc4a555f2f1b7bb07b6c2c3a001fc0986b1712b3b2f4ccee30",
+    "frontmatter.tex": "36a9d3f05dca76ebb9c1cc0e71b1c49730493a4c94f4a953f0295efdc873756d",
+    "repository.tex": "c7ac6f987a540ebbe57fcf744d7e13cef9a8c6fe5175bb5926043abfc44ebd30",
+    "abstract.tex": "be15fc349b1e022e7be193eb3e1e10278ef1749dc2b70cc961e87c4e2d281ea8",
+    "body.tex": "b0655db90d369da421f6bd76609eba33f5be9c7bf5d1143bc23bef6d6cea5859",
+    "declarations.tex": "67e43667b95055f0154c38e6ea6e02a30cf6040bc8c4298e0720afd795a2ffaf",
+    "elsarticle_template/supplement.tex": "4c9361b428ea6c42f51434f2abfe9aee22acac09f68ae0a7c83ca265f5848eb5",
+    "supplement_body.tex": "7d4b52db8cb3b79563abdc827b346975905dfc5a288898d2c156618b00333065",
+    "appendix_tripod.tex": "dda8fc1b3023c0e7e44ab3b97447d13d23f4bf0115d0e01e739f7d8c49f62612"
+  },
+  "commented_inputs": []
+}

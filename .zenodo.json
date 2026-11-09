@@ -1,0 +1,39 @@
+{
+  "title": "Closed-form depth-fusion readout versus parameter-efficient adaptation of speech foundation models for low-resource clinical screening from voice: analysis code and aggregate data",
+  "description": "Post-training reconstruction of the article analysis from 2,025 run-level aggregate results. Includes locked Python environment, original analysis generators, aggregate CSV/JSON inputs, scientific regression checks and HTML-to-PDF figures. Does not include audio, participant records, individual predictions or model training code. Code: MIT; aggregate data: CC BY 4.0. See LICENSE and LICENSE-DATA. This candidate is prepared for review and is not a published deposition. The default profile reconstructs the active manuscript from run-level exports without archived q values. Historical exploratory tables are inactive and outside its validation scope.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "version": "1.1.0rc3",
+  "creators": [
+    {
+      "name": "Ramírez Sánchez, José Manuel",
+      "affiliation": "atlanTTic Research Center, Universidade de Vigo"
+    },
+    {
+      "name": "Docío-Fernández, Laura",
+      "affiliation": "atlanTTic Research Center, Universidade de Vigo"
+    },
+    {
+      "name": "García-Caballero, Alejandro A.",
+      "affiliation": "Mental Health Research Group, Ourense, Verín & Barco de Valdeorras Health Area, Service of Psychiatry, Complexo Hospitalario Universitario de Ourense"
+    },
+    {
+      "name": "García-Mateo, Carmen",
+      "affiliation": "atlanTTic Research Center, Universidade de Vigo"
+    }
+  ],
+  "keywords": [
+    "speech foundation models",
+    "clinical voice screening",
+    "parameter-efficient adaptation",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/JMasr/dfa_paper_results",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

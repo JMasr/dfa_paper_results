@@ -1,0 +1,23 @@
+%% Recorded output of the article (corpus and model descriptors). It is measured from the per-speaker
+%% metadata of the corpora and from the public model checkpoints, not from the released run data, so
+%% tools/ does not regenerate it; see paper/README.md.
+\begin{table}[!t]
+\centering
+\caption{Cohort construction: what each release carries, the rule the manifest builder applies, and the speakers the framework uses. Every count is measured from the release files and the manifests; the published descriptions of the corpora are cited in the text for their populations, not for these counts.}
+\label{tab:cohorts}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\fitwidth{\begin{tabular}{l>{\raggedright\arraybackslash}p{0.34\linewidth}>{\raggedright\arraybackslash}p{0.34\linewidth}r}
+\toprule
+Corpus & In the release & Rule applied & Speakers used \\
+\midrule
+ADReSS & 156 speakers with audio; official partition 108/48 train/test & official partition pooled; three speaker-disjoint re-partitions & 156 \\
+VISIA & 183 participants of the master manifest & all kept; age reported at recording & 183 \\
+NeuroVoz & 112 subject ids; 111 with the vowel tasks; 108 with a metadata record & complete records only: join of vowel audio and metadata on the subject id & 107 \\
+PARCZ & 154 subjects, vowel tasks only & whole release; label from the filename group prefix, verified against the composition & 154 \\
+COPERIA & 154 participants in each of the two sets & same speakers in both sets: one statistical block & 154 \\
+Coswara & 2{,}746 participants; 2{,}114 with a confirmed status & confirmed status only; 36 undecodable /a/ files dropped & 2{,}078 \\
+Italian PD & 50 speakers after excluding young controls & 10 held-out speakers $<$ 20: excluded & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

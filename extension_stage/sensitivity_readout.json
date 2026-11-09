@@ -1,0 +1,426 @@
+{
+ "analyses": {
+  "dfa_no_mask": {
+   "speaker_auroc": {
+    "all": {
+     "blocks": 5,
+     "favourable": 3,
+     "max": 4.76,
+     "median": 2.48,
+     "min": -3.75,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 0
+    },
+    "by_block": {
+     "adress_dementia/whisper_base": 4.76,
+     "coperia/whisper_base": -3.75,
+     "coswara/whisper_base": -0.6,
+     "neurovoz_vowels/whisper_base": 2.48,
+     "parcz_vowels/whisper_base": 3.18
+    },
+    "whisper_base": {
+     "blocks": 5,
+     "favourable": 3,
+     "max": 4.76,
+     "median": 2.48,
+     "min": -3.75,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 0
+    }
+   },
+   "speaker_macro_f1": {
+    "all": {
+     "blocks": 6,
+     "favourable": 3,
+     "max": 14.18,
+     "median": 0.36,
+     "min": -8.07,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 1
+    },
+    "by_block": {
+     "adress_dementia/whisper_base": 9.29,
+     "coperia/whisper_base": -0.96,
+     "coswara/whisper_base": 0.72,
+     "neurovoz_vowels/whisper_base": 14.18,
+     "parcz_vowels/whisper_base": 0.0,
+     "visia/whisper_base": -8.07
+    },
+    "whisper_base": {
+     "blocks": 6,
+     "favourable": 3,
+     "max": 14.18,
+     "median": 0.36,
+     "min": -8.07,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 1
+    }
+   }
+  },
+  "dfa_speaker_balanced": {
+   "speaker_auroc": {
+    "all": {
+     "blocks": 15,
+     "favourable": 4,
+     "max": 4.13,
+     "median": -0.83,
+     "min": -4.76,
+     "n_effective": 13,
+     "p": 0.1621,
+     "p_min": 0.0002,
+     "q": 0.3242,
+     "unchanged": 2
+    },
+    "by_block": {
+     "adress_dementia/hubert_base": -1.19,
+     "adress_dementia/wav2vec2_base": 1.19,
+     "adress_dementia/whisper_base": -4.76,
+     "coperia/hubert_base": -3.42,
+     "coperia/wav2vec2_base": -4.49,
+     "coperia/whisper_base": -4.17,
+     "coswara/hubert_base": -0.42,
+     "coswara/wav2vec2_base": -1.3,
+     "coswara/whisper_base": 0.0,
+     "neurovoz_vowels/hubert_base": -0.83,
+     "neurovoz_vowels/wav2vec2_base": 0.0,
+     "neurovoz_vowels/whisper_base": 4.13,
+     "parcz_vowels/hubert_base": 0.91,
+     "parcz_vowels/wav2vec2_base": 1.82,
+     "parcz_vowels/whisper_base": -1.37
+    },
+    "hubert_base": {
+     "blocks": 5,
+     "favourable": 1,
+     "max": 0.91,
+     "median": -0.83,
+     "min": -3.42,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 0
+    },
+    "wav2vec2_base": {
+     "blocks": 5,
+     "favourable": 2,
+     "max": 1.82,
+     "median": 0.0,
+     "min": -4.49,
+     "n_effective": 4,
+     "no_test_reason": "ADR 0007 Section 3: 4 non-zero block(s) give p_min=0.125 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.125,
+     "unchanged": 1
+    },
+    "whisper_base": {
+     "blocks": 5,
+     "favourable": 1,
+     "max": 4.13,
+     "median": -1.37,
+     "min": -4.76,
+     "n_effective": 4,
+     "no_test_reason": "ADR 0007 Section 3: 4 non-zero block(s) give p_min=0.125 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.125,
+     "unchanged": 1
+    }
+   },
+   "speaker_macro_f1": {
+    "all": {
+     "blocks": 18,
+     "favourable": 2,
+     "max": 3.53,
+     "median": -0.39,
+     "min": -5.71,
+     "n_effective": 12,
+     "p": 0.0414,
+     "p_min": 0.0005,
+     "q": 0.1656,
+     "unchanged": 6
+    },
+    "by_block": {
+     "adress_dementia/hubert_base": -5.71,
+     "adress_dementia/wav2vec2_base": -0.56,
+     "adress_dementia/whisper_base": -3.26,
+     "coperia/hubert_base": -0.22,
+     "coperia/wav2vec2_base": 1.74,
+     "coperia/whisper_base": -2.11,
+     "coswara/hubert_base": -1.15,
+     "coswara/wav2vec2_base": -0.7,
+     "coswara/whisper_base": 0.0,
+     "neurovoz_vowels/hubert_base": -4.21,
+     "neurovoz_vowels/wav2vec2_base": -4.09,
+     "neurovoz_vowels/whisper_base": -4.15,
+     "parcz_vowels/hubert_base": 0.0,
+     "parcz_vowels/wav2vec2_base": 0.0,
+     "parcz_vowels/whisper_base": 0.0,
+     "visia/hubert_base": 0.0,
+     "visia/wav2vec2_base": 3.53,
+     "visia/whisper_base": 0.0
+    },
+    "hubert_base": {
+     "blocks": 6,
+     "favourable": 0,
+     "max": 0.0,
+     "median": -0.69,
+     "min": -5.71,
+     "n_effective": 4,
+     "no_test_reason": "ADR 0007 Section 3: 4 non-zero block(s) give p_min=0.125 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.125,
+     "unchanged": 2
+    },
+    "wav2vec2_base": {
+     "blocks": 6,
+     "favourable": 2,
+     "max": 3.53,
+     "median": -0.28,
+     "min": -4.09,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 1
+    },
+    "whisper_base": {
+     "blocks": 6,
+     "favourable": 0,
+     "max": 0.0,
+     "median": -1.06,
+     "min": -4.15,
+     "n_effective": 3,
+     "no_test_reason": "ADR 0007 Section 3: 3 non-zero block(s) give p_min=0.250 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.25,
+     "unchanged": 3
+    }
+   }
+  },
+  "dfa_speaker_weighted": {
+   "speaker_auroc": {
+    "all": {
+     "blocks": 15,
+     "favourable": 7,
+     "max": 11.57,
+     "median": 0.0,
+     "min": -8.34,
+     "n_effective": 14,
+     "p": 0.5936,
+     "p_min": 0.0001,
+     "q": 0.5936,
+     "unchanged": 1
+    },
+    "by_block": {
+     "adress_dementia/hubert_base": 0.59,
+     "adress_dementia/wav2vec2_base": -8.34,
+     "adress_dementia/whisper_base": 2.58,
+     "coperia/hubert_base": 2.03,
+     "coperia/wav2vec2_base": 4.28,
+     "coperia/whisper_base": -0.21,
+     "coswara/hubert_base": -0.56,
+     "coswara/wav2vec2_base": -4.07,
+     "coswara/whisper_base": 0.0,
+     "neurovoz_vowels/hubert_base": 11.57,
+     "neurovoz_vowels/wav2vec2_base": 8.68,
+     "neurovoz_vowels/whisper_base": -0.83,
+     "parcz_vowels/hubert_base": 0.46,
+     "parcz_vowels/wav2vec2_base": -0.45,
+     "parcz_vowels/whisper_base": -3.64
+    },
+    "hubert_base": {
+     "blocks": 5,
+     "favourable": 4,
+     "max": 11.57,
+     "median": 0.59,
+     "min": -0.56,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 0
+    },
+    "wav2vec2_base": {
+     "blocks": 5,
+     "favourable": 2,
+     "max": 8.68,
+     "median": -0.45,
+     "min": -8.34,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 0
+    },
+    "whisper_base": {
+     "blocks": 5,
+     "favourable": 1,
+     "max": 2.58,
+     "median": -0.21,
+     "min": -3.64,
+     "n_effective": 4,
+     "no_test_reason": "ADR 0007 Section 3: 4 non-zero block(s) give p_min=0.125 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.125,
+     "unchanged": 1
+    }
+   },
+   "speaker_macro_f1": {
+    "all": {
+     "blocks": 18,
+     "favourable": 7,
+     "max": 9.84,
+     "median": -0.62,
+     "min": -14.7,
+     "n_effective": 16,
+     "p": 0.5349,
+     "p_min": 0.0,
+     "q": 0.5936,
+     "unchanged": 2
+    },
+    "by_block": {
+     "adress_dementia/hubert_base": -6.48,
+     "adress_dementia/wav2vec2_base": -6.96,
+     "adress_dementia/whisper_base": 6.25,
+     "coperia/hubert_base": 4.83,
+     "coperia/wav2vec2_base": 9.84,
+     "coperia/whisper_base": -2.11,
+     "coswara/hubert_base": 0.88,
+     "coswara/wav2vec2_base": -4.46,
+     "coswara/whisper_base": 0.0,
+     "neurovoz_vowels/hubert_base": -1.25,
+     "neurovoz_vowels/wav2vec2_base": 0.0,
+     "neurovoz_vowels/whisper_base": 9.8,
+     "parcz_vowels/hubert_base": -3.2,
+     "parcz_vowels/wav2vec2_base": 2.6,
+     "parcz_vowels/whisper_base": -2.84,
+     "visia/hubert_base": -14.7,
+     "visia/wav2vec2_base": 0.98,
+     "visia/whisper_base": -7.51
+    },
+    "hubert_base": {
+     "blocks": 6,
+     "favourable": 2,
+     "max": 4.83,
+     "median": -2.23,
+     "min": -14.7,
+     "n_effective": 6,
+     "p": 0.3125,
+     "p_min": 0.0312,
+     "unchanged": 0
+    },
+    "wav2vec2_base": {
+     "blocks": 6,
+     "favourable": 3,
+     "max": 9.84,
+     "median": 0.49,
+     "min": -6.96,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 1
+    },
+    "whisper_base": {
+     "blocks": 6,
+     "favourable": 2,
+     "max": 9.8,
+     "median": -1.06,
+     "min": -7.51,
+     "n_effective": 5,
+     "no_test_reason": "ADR 0007 Section 3: 5 non-zero block(s) give p_min=0.062 > 0.05, so no test exists",
+     "p": null,
+     "p_min": 0.0625,
+     "unchanged": 1
+    }
+   }
+  }
+ },
+ "backbones": [
+  "hubert_base",
+  "wav2vec2_base",
+  "whisper_base"
+ ],
+ "cells": 21,
+ "cells_one_window_per_speaker": [
+  "coperia_cough/hubert_base",
+  "coperia_cough/wav2vec2_base",
+  "coperia_cough/whisper_base",
+  "coswara/whisper_base"
+ ],
+ "corpora": [
+  "adress_dementia",
+  "coperia_a",
+  "coperia_cough",
+  "coswara",
+  "neurovoz_vowels",
+  "parcz_vowels",
+  "visia"
+ ],
+ "device": [
+  "cuda"
+ ],
+ "family": {
+  "correction": "Benjamini-Hochberg over the four sensitivity tests",
+  "n_tests": 4
+ },
+ "mask_dose_response": {
+  "n": 6,
+  "p": 0.3965,
+  "spearman_rho": -0.429,
+  "x": "padded fraction of test frames",
+  "y": "|delta speaker AUROC| without the mask, pp"
+ },
+ "note": "Sensitivity analyses on the processed split held on disk, not re-runs of the campaign cells: the campaign resampled three speaker-disjoint partitions per cell and that partitioning is not recoverable from the cache. The paired per-block differences are the result; the absolute values are not campaign numbers.",
+ "whisper_real_frame_fraction": {
+  "adress_dementia": 0.6822,
+  "coperia_a": 0.4378,
+  "coperia_cough": 0.0898,
+  "coswara": 0.3134,
+  "neurovoz_vowels": 0.1287,
+  "parcz_vowels": 0.023,
+  "visia": 0.8801
+ },
+ "whisper_real_frame_fraction_range": [
+  0.023,
+  0.8801
+ ],
+ "windows_per_speaker": {
+  "adress_dementia/hubert_base": 3.68,
+  "adress_dementia/wav2vec2_base": 3.68,
+  "adress_dementia/whisper_base": 1.53,
+  "coperia_a/hubert_base": 2.13,
+  "coperia_a/wav2vec2_base": 2.13,
+  "coperia_a/whisper_base": 1.11,
+  "coperia_cough/hubert_base": 1.0,
+  "coperia_cough/wav2vec2_base": 1.0,
+  "coperia_cough/whisper_base": 1.0,
+  "coswara/hubert_base": 1.49,
+  "coswara/wav2vec2_base": 1.49,
+  "coswara/whisper_base": 1.0,
+  "neurovoz_vowels/hubert_base": 9.85,
+  "neurovoz_vowels/wav2vec2_base": 9.85,
+  "neurovoz_vowels/whisper_base": 9.8,
+  "parcz_vowels/hubert_base": 19.21,
+  "parcz_vowels/wav2vec2_base": 19.21,
+  "parcz_vowels/whisper_base": 19.21,
+  "visia/hubert_base": 11.54,
+  "visia/wav2vec2_base": 11.54,
+  "visia/whisper_base": 4.2
+ },
+ "windows_per_speaker_range": [
+  1.0,
+  19.21
+ ]
+}

@@ -1,0 +1,69 @@
+{
+  "stage": "extension stage",
+  "analysis_package": "paquete_campana2_20260908_1651",
+  "package_generated": "2026-09-08 16:51:10",
+  "analysis_code_commit": "f81e284",
+  "bundle": {
+    "name": "campana2",
+    "runs": 1197,
+    "git_commit": "358d9c7c2c3ce730a10a3db2667cfee83f8e03aa"
+  },
+  "files": {
+    "analysis_policies.csv": {
+      "sha256": "d38aa89fec8b472685ef2acf34976d675a60aa5347419656a1c7feb1dae3a7ec",
+      "source": "analysis package paquete_campana2_20260908_1651, file 06_matriz_politicas.csv (byte-identical)"
+    },
+    "arm_summary.csv": {
+      "sha256": "50b83e8e5ddb8e36667759bb8f43ab1f74e8009599b7b767cbb5f10a6a766a5a",
+      "source": "analysis package paquete_campana2_20260908_1651, file 07_resumen_por_brazo.csv (byte-identical)"
+    },
+    "below_floor_rates.csv": {
+      "sha256": "2e3044054c000e8ee737eb5ddbe9421171abe857cce5538cad1149f16e8bd16a",
+      "source": "analysis package paquete_campana2_20260908_1651, file 05_suelo_trivial.csv (byte-identical)"
+    },
+    "block_deltas.csv": {
+      "sha256": "757bb66e76476ab72037ab9c1e84e782f4e3dffcc2efad95deec211c6ffc071b",
+      "source": "analysis package paquete_campana2_20260908_1651, file 03_deltas_por_bloque.csv (byte-identical)"
+    },
+    "bundle_runs.csv": {
+      "sha256": "a5c77c16c5ea6486d221ecf8b62299f6c0e5b80e3e92cd63548c1d0a2f0fd0c1",
+      "source": "campaign bundle campana2 runs.csv, every metric of every run (byte-identical)"
+    },
+    "cell_wall_clock.csv": {
+      "sha256": "ce20137da4249c0ec0befe5279c89ad4895bfe7552c56fedca854be097379fea",
+      "source": "per-cell wall clock from the campaign status log (byte-identical extract)"
+    },
+    "contrasts.csv": {
+      "sha256": "760168ef0737dc8c7c3788de0923d7e697eb539e97396992db1cb172f110f4b9",
+      "source": "analysis package paquete_campana2_20260908_1651, file 02_contrastes.csv (byte-identical)"
+    },
+    "coverage.csv": {
+      "sha256": "ae4170c02eb38048faa3359d448bd96e13e423cc7b7141cfde3b86eafb2a53fc",
+      "source": "analysis package paquete_campana2_20260908_1651, file 08_cobertura.csv (byte-identical)"
+    },
+    "hpo_trials.csv": {
+      "sha256": "c8664e0957cff7b7f803c73581a53b9dfc34191e628298c0fc00bb0841021733",
+      "source": "rows with stage == 2 of hpo_trials_summary.csv (sha256 a453562c20f3ad2abf489cf809d26bbeebe4b42186758390f68a20683c194c3b), extracted from the campaign logs"
+    },
+    "negative_control.csv": {
+      "sha256": "0dacce3aa657a5dc7750455de593a30368f5beaa242966c6c7f28383a0da71a1",
+      "source": "analysis package paquete_campana2_20260908_1651, file 04_control_negativo.csv (byte-identical)"
+    },
+    "protocol_logs.csv": {
+      "sha256": "b1c87c0593554721019cb536749ce5f124bd4e6cc806638c0089792424c73d8c",
+      "source": "rows with stage == 2 of protocol_logs.csv (sha256 7cd95e8c89d5b4827ac94ab044b9ed93aa7b6e1f602330361641684c840f7d67), extracted from the campaign logs"
+    },
+    "protocol_runs.csv": {
+      "sha256": "0c82f37152cfcd36e069b3f496c98ffa55418a4d6eecb29f653b02751a76bbbf",
+      "source": "rows with stage == 2 of protocol_runs.csv (sha256 56e70685ed06dc7e9084bf4a00c2b034d009151fcc1515d2be1add8d8a62d0ee), extracted from the campaign logs"
+    },
+    "runs.csv": {
+      "sha256": "a70f36e2d88458fc75e08575f17faf4d776136f8f828fc7822ed144fb53bee5e",
+      "source": "analysis package paquete_campana2_20260908_1651, file 01_runs.csv (byte-identical)"
+    },
+    "sensitivity_readout.json": {
+      "sha256": "1a9ab3528d975ffd61f4eb39c9d3b0f606d3654d29a2887e30f785190acfbaf4",
+      "source": "sensitivity analyses of the closed-form readout (byte-identical)"
+    }
+  }
+}

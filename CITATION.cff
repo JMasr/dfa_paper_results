@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the article they accompany."
+title: "Closed-form depth-fusion readout versus parameter-efficient adaptation of speech foundation models for low-resource clinical screening from voice: analysis code and aggregate data"
+type: software
+version: "1.1.0rc3"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/JMasr/dfa_paper_results"
+authors:
+  - family-names: "Ramírez Sánchez"
+    given-names: "José Manuel"
+    email: "jmramirez@gts.uvigo.es"
+    affiliation: "atlanTTic Research Center, Universidade de Vigo"
+  - family-names: "Docío-Fernández"
+    given-names: "Laura"
+    affiliation: "atlanTTic Research Center, Universidade de Vigo"
+  - family-names: "García-Caballero"
+    given-names: "Alejandro A."
+    affiliation: "Mental Health Research Group, Ourense, Verín & Barco de Valdeorras Health Area, Service of Psychiatry, Complexo Hospitalario Universitario de Ourense"
+  - family-names: "García-Mateo"
+    given-names: "Carmen"
+    affiliation: "atlanTTic Research Center, Universidade de Vigo"
+keywords:
+  - speech foundation models
+  - parameter-efficient fine-tuning
+  - clinical voice screening
+  - reproducibility

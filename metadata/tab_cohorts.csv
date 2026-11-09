@@ -1,0 +1,8 @@
+corpus,in_release,selection_rule,speakers_used
+ADReSS,156 speakers with audio; official partition 108/48 train/test,official partition pooled; three speaker-disjoint re-partitions,156
+VISIA,183 participants of the master manifest,all kept; age reported at recording,183
+NeuroVoz,112 subject ids; 111 with the vowel tasks; 108 with a metadata record,complete records only: join of vowel audio and metadata on the subject id,107
+PARCZ,"154 subjects, vowel tasks only","whole release; label from the filename group prefix, verified against the composition",154
+COPERIA,154 participants in each of the two sets,same speakers in both sets: one statistical block,154
+Coswara,"2{,}746 participants; 2{,}114 with a confirmed status",confirmed status only; 36 undecodable /a/ files dropped,"2{,}078"
+Italian PD,50 speakers after excluding young controls,10 held-out speakers $<$ 20: excluded,--

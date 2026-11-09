@@ -1,0 +1,38 @@
+{
+  "note": "Constants of the experiment code that the protocol extracts do not carry, read from the code repository at the commit that produced the extension-stage analysis package. build_protocol_macros.py reads them.",
+  "code": {
+    "repo_head": "f81e284a187590f8f2583951dac3a053a67d59f2",
+    "entry_point": "phd_lora.hypotheses.h2 (scripts/run_widened_hpo_campaign.py; etapa2_20260901/driver.sh)",
+    "FINAL_MODEL_VAL_FRACTION": 0.15,
+    "DEFAULT_TEST_OUT_FRACTION": 0.2,
+    "pruner_class": "optuna.pruners.MedianPruner",
+    "stage1_pruner": {
+      "source": "h2.py at d2315d2^ (n_startup_trials = sampler start-up = max(1, min(5, n_trials // 4)); no pruner line was logged in that stage)",
+      "n_startup_trials": 1,
+      "n_warmup_steps": 2
+    },
+    "stage2_pruner": {
+      "source": "sampler/pruner line of the stage-2 logs (protocol_logs.csv)"
+    },
+    "trainer_config": {
+      "file": "conf/trainer/lora.yaml (base.yaml and fft.yaml carry the same values)",
+      "evidence": "no run overrode these keys (protocol_runs.csv, trainer_overrides)",
+      "weight_decay": 0.01,
+      "max_grad_norm": 1.0,
+      "warmup_ratio": 0.01,
+      "early_stopping_threshold": 0.0001,
+      "early_stopping_divergence_patience": 3,
+      "lr_scheduler_type": "linear (Hugging Face Trainer default; not set in the file)"
+    },
+    "lr_search_space": {
+      "file": "conf/hpo/_fair_base.yaml",
+      "low": "1e-5",
+      "high": "5e-2",
+      "log": true
+    }
+  },
+  "completed_runs": {
+    "stage1": 828,
+    "stage2": 1197
+  }
+}
